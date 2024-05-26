@@ -7,7 +7,7 @@ import { SearchAccountAggregators } from '@/api/aa_metrics';
 import Graph from '../Graph';
 
 export default function AASelect() {
-    const [aaName, setAAName] = useState('Setu AA')
+    const [aaName, setAAName] = useState('')
     const [aaGraph, setAAGraph] = useState('Setu AA')
     const [showDropdown, setShowDropdown] = useState(false);
     const [debounceName] = useDebounce(aaName, 370);
@@ -38,7 +38,9 @@ export default function AASelect() {
                         onChange={handleInputChange}
                         onFocus={() => showDropdown && setShowDropdown(true)}
                     />
+                    <div className='hover:cursor-pointer' onClick={() => setShowDropdown((show) => !show)}>
                     <MdOutlineKeyboardArrowDown size={29} color='gray' className="absolute top-2 right-2" />
+                    </div>
                     {
                         showDropdown && (
                             <div className="absolute w-full mt-1 bg-white rounded-md shadow-lg z-10">
