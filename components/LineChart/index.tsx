@@ -5,13 +5,14 @@ import { ResponsiveLine } from "@nivo/line"
 import { FC } from "react"
 
 interface ILineChart{
-    data: INovuAATrend
+    data: INovuAATrend,
+    aaName: string
 }
 
-const LineChart: FC<ILineChart> = ({ data}) => {
+const LineChart: FC<ILineChart> = ({ data, aaName}) => {
     return (
         <div className="flex flex-col rounded-md border-2 border-slate-200 p-4">
-            <div className="text-slate-500 font-bold text-xl">Availability Trend</div>
+            <p className="text-slate-500 font-[500] text-xl mr-4"><span className="text-blue-500 font-bold mr-1">{aaName}</span>Availability Trend</p>
         <div className="aspect-[13/5]">
       <ResponsiveLine
         data={data.data}

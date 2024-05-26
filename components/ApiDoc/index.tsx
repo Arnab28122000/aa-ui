@@ -6,7 +6,9 @@ import "swagger-ui-react/swagger-ui.css"
 
 const ApiDocumentation = () => {
   return (
-    <SwaggerUI url="https://aa-backend-service-production.up.railway.app/openapi.json" />
+    <div className='min-h-96'>
+    <SwaggerUI url="https://setu-backend.dashtics.com/openapi.json" />
+    </div>
 )}
 
 export default ApiDocumentation;

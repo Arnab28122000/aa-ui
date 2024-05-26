@@ -3,7 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 
 const AAMetricsAPI = () => {
     return axios.create({
-        baseURL: `https://aa-backend-service-production.up.railway.app/aa`,
+        baseURL: `https://setu-backend.dashtics.com/aa`,
     });
 
 };
