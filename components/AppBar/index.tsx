@@ -11,7 +11,7 @@ export default function AppBar(){
                     <IoIosAnalytics size={31} color="rgba(37, 99, 235, 0.9)"/>
                 </div>
                 <p className="text-xl sm:text-3xl ml-2 font-bold text-gray-600">AA
-                <span className="text-xl sm:text-3xl font-bold text-blue-600"> Availibility</span></p>
+                <span className="text-xl sm:text-3xl font-bold text-blue-600"> Availability</span></p>
             </div>
             </Link>
             
